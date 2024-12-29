@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/72fb91e857.js" crossorigin="anonymous"></script>
+    <title>Hello Noah!</title>
+</head>
+<body>
+    
+    <div class="bell">
+        <i class="fa-regular fa-bell fa-2xl">
+            <span id="bellNotification" title="notificacion">2</span>
+        </i>
+    </div>
+
+    <header class="main-header">
+        <div class="main-header_title">
+            <h1>Hello Noah!</h1>
+            <p>Your available balance</p>
+        </div>
+        <!-- actual account balance -->
+        <span id="currentBalance">
+            <div class="show-balance-wrapper">
+            <span id="currentBalanceAmount">$15,00 </span>
+            <button aria-label="Show balance" id="toggle_showCurrentBalance" type="button">
+                <!-- Add '.fa-eyes-slash' when '#currentBalance' is hidden -->
+                <i class="fa-regular fa-eye" id="showCurrentBalance"  style="color: #d0d0d0;"></i>
+            </button>
+            </div>
+            <!-- temp only testing -->
+            <div class="qr-scan-wrapper">
+            <button aria-label="QR Scan" id="qrScanCurrentBalance" type="button">
+                <i class="fa-solid fa-qrcode fa-2xl" style="color: #d0d0d0; font-size: 3.5rem; margin-right: 1rem;"></i>
+            </button>
+            </div>
+        </span>
+    </header>
+
+    <div class="transfer-card">
+        <div class="top-up transfer-action">
+            <button aria-label="Top up" for="topUp">
+                <i class="fa-solid fa-arrow-up-from-bracket fa-2xl"></i>
+                Top Up
+            </button>
+        </div>
+        <div class="swap-money transfer-action">
+            <button aria-label="Swap money" for="swapMoney">
+                <i class="fa-solid fa-exchange fa-2xl"></i>
+                Swap
+            </button>
+        </div>
+        <div class="request-money transfer-action">
+            <button aria-label="Request money" for="requestMoney">
+                <i class="fa-solid fa-arrow-up-from-bracket fa-2xl" style="rotate: 180deg;"></i>
+                Request
+            </button>
+        </div>
+    </div>
+
+    <div class="payment-list-title">
+        <h2>Payment List</h2>
+    </div>
+    <div class="payment-list">
+        <div class="internet service">
+            <button aria-label="Internet" for="internet">
+                <i class="fa-solid fa-wifi fa-2xl"></i>
+            </button>
+            Internet
+        </div>
+        <div class="electricity service">
+            <button aria-label="Electricity" for="electricity">
+                <i class="fa-solid fa-lightbulb fa-2xl"></i>
+            </button>
+            Electricity
+        </div>
+        <div class="education service">
+            <button aria-label="Education" for="education">
+                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+            </button>
+            Education
+        </div>
+        <div class="view-all_payment service">
+            <button aria-label="View all payments" id="toggle_viewAllPayments" for="viewAllPayments">
+                <i class="fa-solid fa-table-list fa-2xl"></i>
+            </button>
+            View all
+        </div>
+    </div>
+
+    <div class="promo-title">
+        <h2>Payment Services</h2>
+    </div>
+    <div class="promo">
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        <div class="discounts-card">
+            <div class="discounts-card-content">
+            <span>Get discounts up to 10%</span>
+            <p>Lorem, ipsum dolor.</p>
+            <a href="#">Click Here</a>
+            </div>
+            <div class="discounts-card-image"></div>
+            <img src="./assets/img/abstract-discount-img.png" alt="discounts">
+        </div>
+        
+        <!-- this has to be a carrousel -->
+        <!-- create component assets/componentes/promo/discounts-card_component -->
+    </div>
+
+    <div class="transaction-container">
+        <div class="transaction-header">
+            <h3>Transaction</h3>
+            <span id="transaction_short-menu">Short by <b>Lastest</b></span>
+        </div>
+        <ul class="transaction-list">
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+            <li class="transaction-item">
+                <div class="transaction_name-date">
+                    <span id="transaction_name">Electricity</span>
+                    <span id="transaction_date">12/12/2020</span>
+                </div>
+                <div class="payment">
+                    <span>Payment</span>
+                </div>
+                <div class="transaction-status">
+                    <span id="transactionStatus">Success</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-item">
+            <i class="fa-solid fa-home fa-xl" aria-label="Home"></i>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-chart-column fa-xl"></i>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-wallet fa-xl" aria-label="Wallet"></i>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-user fa-xl" aria-label="User"></i>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/toggle_showCurrentBalance.js"></script>
+
+</html>
